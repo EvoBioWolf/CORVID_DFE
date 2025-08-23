@@ -1,0 +1,12 @@
+########################
+# 3. ESTIMATION OF DFE #
+########################
+
+These files are used to pass the parameters when running the demographic models (1-epoch, 2-epochs), and the estimation of the DFE. The path to the folder containing them must be indicated in the *sh scripts before running the analysis.
+
+1_est_dfe_1e-site_class-0_config.txt
+1_est_dfe_2e-site_class-0_config.txt
+2_est_dfe_1e-site_class-1_config.txt
+2_est_dfe_2e-site_class-1_config.txt
+
+The script must be launched from within each folder containing the sfs, and bootstrap replicates, if generated.

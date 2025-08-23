@@ -1,0 +1,13 @@
+###################
+# 1. PREPARE VCFs #
+###################
+The 6 scripts in this folder perform the following tasks:
+
+1.1. This script uses the genome annotation to generate a file indicating the type of site. In this case we are interested in sites experiencing some kind of selection (0-fold, 2-fold, 3-fold degenerate sites), and those evolving (nearly-) neutrally (4-fold degenerate sites).
+1.2. This script generates bedfiles containing each of the 4 different types of sites. 
+1.3. Extract the different sites and merge them into a single vcf file. This vcf will be used in the next steps to produce vcfs in which CpG sites and W->S mutations (A-C,A-G,T-C,T-G) are masked.
+1.4. Creates bedfile with positions of the CpG polymorphisms as in Kutsschera et al (2020).
+1.5. Masks CpG polymorphic sites.
+1.6. Removes polymorphic sites involving W->S mutations both polymorphic and fixed when comparing individuals and reference.
+
+As output, there are in the end 2 types of vcf files that constitute the basis for subsequent analyses of DFE estimation: one contains all sites available in the genome for each of the 4 types indicated in 1.1,  and one with masked CpG and W->S mutations.

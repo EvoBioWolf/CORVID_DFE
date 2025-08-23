@@ -1,0 +1,7 @@
+data_path_1	/dss/dsslegfs01/pr53da/pr53da-dss-0018/projects/2017__DFErecomb/alpha/Final_Datasets/DFEalpha/scripts/data_tables_DFEalpha/data
+#data_path_2     data-three-epoch/
+sfs_input_file  sfs.txt
+est_dfe_results_dir     est_dfe_results_neut
+site_class 0
+fold       1
+epochs     1

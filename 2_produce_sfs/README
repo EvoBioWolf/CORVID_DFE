@@ -1,0 +1,10 @@
+############################
+# 2. PRODUCTION OF THE SFS #
+############################
+These scripts are run on each of the 2 types of vcf files produced in step 1.
+
+2.1. The first step consists in producing a summary of the annotated sites and their respective type (0,2,3,4-fold) (vcfSummarizer.py in folder scripts_rwilliamson).
+2.2 Given that DFEalpha requires the SFSs to include sites evolving either under selection (0,2,3-fold) or (nearly-)neutrally, we perform a step to recode 2- and 3-fold sites as 0-fold
+in order to have a unique category of sites under selection.
+2.3. Finally, the summary file is used to produce the two required SFSs already formatted to be used with DFEalpha, and a hundred of bootstrap replicates.
+In this step all sites with less individuals than specified to the script, as well as multi-nucleotide polymorphic sites will be discarded.
